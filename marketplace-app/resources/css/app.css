@@ -24,3 +24,126 @@
         scrollbar-width: none;
     }
 }
+
+.container {
+   background:#F6EADB;
+}
+
+header{
+    position: sticky;
+    top:0;
+    z-index:999;
+}
+
+header a{
+    transition:.3s;
+}
+
+header a:hover{
+    color:#0d6efd !important;
+}
+
+header .btn{
+    font-weight:600;
+}
+
+.hero-section{
+    position: relative;
+}
+
+.hero-image{
+    height: 750px;
+    object-fit: cover;
+}
+
+/* Overlay */
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background: rgba(0,0,0,.35); */
+
+    z-index: 10;   /* Penting */
+}
+
+/* Carousel */
+#heroCarousel{
+    position: relative;
+    z-index: 1;
+}
+
+/* Isi overlay */
+.hero-content{
+    text-align: center;
+    color: #fff;
+    z-index: 11;
+    position: relative;
+}
+
+.hero-title{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-color: #fff;
+}
+
+.hero-logo{
+    width: 600px;
+    display: block;
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.hero-subtitle{
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+}
+
+#momentsTrack{
+
+    scrollbar-width:none;
+
+}
+
+#momentsTrack::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.card{
+
+    border:none;
+
+    border-radius:12px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    transition:.3s;
+
+}
+
+.info-card{
+
+    transition:.35s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15)!important;
+
+}

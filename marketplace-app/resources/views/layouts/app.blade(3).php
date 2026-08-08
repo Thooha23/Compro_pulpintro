@@ -5,78 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Lions Club Jakarta Pulpintro')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body class="font-sans text-gray-800 antialiased">
 
     {{-- ================= NAVBAR ================= --}}
-    <header class="border-bottom bg-white shadow-sm">
-        <div class="container-fluid px-4">
-
-            <div class="d-flex align-items-center justify-content-between py-3">
-
-                <!-- Logo -->
-                <div class="d-flex align-items-center">
-
-                    <img src="{{ asset('assets/images/logo-lions.png') }}"
-                        class="me-2"
-                        width="65">
-
-                    <img src="{{ asset('assets/images/logo-jakarta-pulpintro.jpeg') }}"
-                        class="me-3"
-                        width="55">
-
-                    <div class="lh-sm">
-                        <h4 class="mb-0 fw-semibold">Lions Club</h4>
-                        <h4 class="mb-0 fw-semibold">Jakarta Pulpintro</h4>
-                    </div>
-
-                </div>
-
-                <!-- Menu -->
-                <div class="d-none d-lg-flex align-items-center gap-5">
-
-                    <a href="{{ route('home') }}"
-                    class="text-decoration-none text-dark fw-bold">
-                        <h4>Home</h4>
-                    </a>
-
-                    <a href="{{ route('about') }}"
-                    class="text-decoration-none text-dark fw-bold">
-                        <h4>About Us</h4>
-                    </a>
-
-                    <a href="{{ route('service') }}"
-                    class="text-decoration-none text-dark fw-bold">
-                        <h4>Our Service & Impact</h4>
-                    </a>
-
-                    <a href="{{ route('partnership') }}"
-                    class="text-decoration-none text-dark fw-bold">
-                        <h4>Our Partnership</h4>
-                    </a>
-
-                </div>
-
-                <!-- Button -->
-                <div class="d-flex gap-3">
-
-                    <a href="#"
-                    class="btn rounded-pill px-4 text-white"
-                    style="background:#F5298E;">
-                        Join
-                    </a>
-
-                    <a href="#"
-                    class="btn rounded-pill px-4 text-white"
-                    style="background:#F68B1F;">
-                        Fundraising
-                    </a>
-
-                </div>
-
+    <header class="flex items-center justify-between px-8 py-4 border-b border-gray-200">
+        <div class="flex items-center gap-3">
+            {{-- Ganti src di bawah dengan logo Anda sendiri --}}
+            <img src="{{ asset('assets/images/logo-lions.png') }}" alt="Lions Club International" class="h-10 w-10 object-contain">
+            <img src="{{ asset('assets/images/logo-jakarta-pulpintro.jpeg') }}" alt="Lions Club Jakarta Pulpintro" class="h-10 w-10 object-contain">
+            <div class="leading-tight">
+                <p class="font-semibold text-sm text-gray-900">Lions Club</p>
+                <p class="font-semibold text-sm text-gray-900">Jakarta Pulpintro</p>
             </div>
+        </div>
 
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+            <a href="{{ route('home') }}" class="hover:text-gray-900 {{ request()->routeIs('home') ? 'text-gray-900 font-semibold' : '' }}">Home</a>
+            <a href="{{ route('about') }}" class="hover:text-gray-900 {{ request()->routeIs('about') ? 'text-gray-900 font-semibold' : '' }}">About Us</a>
+            <a href="{{ route('service') }}" class="hover:text-gray-900 {{ request()->routeIs('service') ? 'text-gray-900 font-semibold' : '' }}">Our Service & Impact</a>
+            <a href="{{ route('partnership') }}" class="hover:text-gray-900 {{ request()->routeIs('partnership') ? 'text-gray-900 font-semibold' : '' }}">Our Partnership</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="#" class="px-5 py-2 rounded-full bg-pink-500 text-white text-sm font-semibold hover:bg-pink-600 transition">Join</a>
+            <a href="#" class="px-5 py-2 rounded-full bg-orange-400 text-white text-sm font-semibold hover:bg-orange-500 transition">Fundraising</a>
         </div>
     </header>
 
