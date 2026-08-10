@@ -41,55 +41,82 @@
     </section>
 
     <section class="py-5" style="background:#F6EADB;">
-        <div class="container">
             {{-- ================= LIONS CLUB INTERNATIONAL ================= --}}
-            <div class="container">
+            <div class="container my-2">
                 <div class="card info-card border-0 shadow-sm rounded-4">
-                    <div class="card-body p-5">
-                        <div class="row align-items-center">
-                            <div class="col-md-3 text-center">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row align-items-center g-4">
+                            {{-- LOGO --}}
+                            <div class="col-12 col-md-3 text-center">
                                 <img src="{{ asset('assets/images/logo-lions.png') }}"
-                                    width="170">
+                                    alt="Lions Club International"
+                                    class="img-fluid lions-logo">
                             </div>
-                            <div class="col-md-9">
+                            {{-- CONTENT --}}
+                            <div class="col-12 col-md-9">
                                 <h2 class="fw-bold mb-3">
                                     Lions Club International
                                 </h2>
-                                <p class="text-secondary">
-                                    ...
+                                <p class="text-secondary mb-4">
+                                    Lions Club International is the world's largest
+                                    humanitarian service club organization, dedicated
+                                    to empowering volunteers to create a meaningful,
+                                    positive impact in their communities. Our core
+                                    focus areas include vision, hunger relief, diabetes,
+                                    childhood cancer, environment protection, and
+                                    humanitarian aid.
                                 </p>
                                 <a href="#"
-                                class="fw-bold text-decoration-none">
+                                class="fw-bold text-decoration-none learn-more">
                                     Learn More →
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
             <br>
 
             {{-- ================= LIONS CLUB JAKARTA PULPINTRO ================= --}}
+            <div class="container my-2">
                 <div class="card info-card border-0 shadow-sm rounded-4">
-                    <div class="card-body p-5">
-                        <div class="row align-items-center">
-                            <div class="col-md-3 text-center">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row align-items-center g-4">
+                            {{-- LOGO --}}
+                            <div class="col-12 col-md-3 text-center">
                                 <img src="{{ asset('assets/images/logo-jakarta-pulpintro.jpeg') }}"
-                                    width="170">
+                                    alt="Lions Club Jakarta Pulpintro"
+                                    class="img lions-logo">
                             </div>
-                            <div class="col-md-9">
-                                ...
+                            {{-- CONTENT --}}
+                            <div class="col-12 col-md-9">
+                                <h2 class="fw-bold mb-3">
+                                    Lions Club Jakarta Pulpintro
+                                </h2>
+                                <p class="text-secondary mb-4">
+                                    Lions Club International is the world's largest
+                                    humanitarian service club organization, dedicated
+                                    to empowering volunteers to create a meaningful,
+                                    positive impact in their communities. Our core
+                                    focus areas include vision, hunger relief, diabetes,
+                                    childhood cancer, environment protection, and
+                                    humanitarian aid.
+                                </p>
+                                <a href="#"
+                                class="fw-bold text-decoration-none learn-more">
+                                    Ways We Serve →
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     
 
     {{-- ================= KEY MOMENTS ================= --}}
-    <section class="py-5" style="background:#F6EADB;">
+    <section class="py-2" style="background:#F6EADB;">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">
                 KEY MOMENTS
@@ -127,6 +154,7 @@
                 </button>
             </div>
         </div>
+        <br>
     </section>
 
     <script>
