@@ -3,7 +3,7 @@
 @section('title', 'Lions Club Jakarta Pulpintro')
 
 @section('content')
-    <section class="py-5" style="background:#F6EADB;">
+    <section class="py-2" style="background:#F6EADB;">
         {{-- ================= Visi & Misi ================= --}}
         <div class="container my-2">
             <div class="card info-card border-0 shadow-sm rounded-4">

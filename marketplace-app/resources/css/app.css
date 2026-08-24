@@ -25,6 +25,18 @@
     }
 }
 
+:root {
+    --serve-bg: #F6EADB;
+    --yellow: #f2bd00;
+    --blue: #2196d2;
+    --purple: #51499a;
+    --green: #69b34c;
+    --red: #f04b35;
+    --orange: #f58232;
+    --dark-purple: #5b1478;
+    --teal: #398ba3;
+}
+
 header{
     position: sticky;
     top:0;
@@ -353,4 +365,225 @@ header .btn{
 
 .structure-card .card-body {
     padding: 20px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+ .ways-section {
+    background-color: var(--serve-bg);
+    padding: 50px 0;
+}
+
+ .ways-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+ /* =========================
+   CARD
+========================= */
+
+ .service-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+    height: 100%;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+ .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12) !important;
+}
+
+ /* =========================
+   IMAGE
+========================= */
+
+ .service-image {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: visible;
+    padding: 12px 12px 0;
+}
+
+ .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+ /* =========================
+   ICON
+========================= */
+
+ .service-icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+     width: 62px;
+    height: 62px;
+
+     border-radius: 50%;
+
+     background-color: rgba(255, 255, 255, .92);
+
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+     z-index: 2;
+
+     box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+}
+
+ .service-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+ /* =========================
+   CONTENT
+========================= */
+
+ .service-body {
+    padding: 18px 12px 25px;
+}
+
+ .service-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+ .service-description {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 0;
+}
+
+ /* =========================
+   TITLE COLORS
+========================= */
+
+ .title-yellow {
+    color: var(--yellow);
+}
+
+ .title-blue {
+    color: var(--blue);
+}
+
+ .title-purple {
+    color: var(--purple);
+}
+
+ .title-green {
+    color: var(--green);
+}
+
+ .title-red {
+    color: var(--red);
+}
+
+ .title-orange {
+    color: var(--orange);
+}
+
+ .title-dark-purple {
+    color: var(--dark-purple);
+}
+
+ .title-teal {
+    color: var(--teal);
+}
+
+ /* =========================
+   RESPONSIVE
+========================= */
+
+ @media (max-width: 991.98px) {
+
+     .ways-title {
+        font-size: 28px;
+    }
+
+     .service-image {
+        height: 200px;
+    }
+
+     .service-title {
+        font-size: 20px;
+    }
+
+     .service-description {
+        font-size: 15px;
+    }
+}
+
+ @media (max-width: 767.98px) {
+
+     .ways-section {
+        padding: 35px 15px;
+    }
+
+     .ways-title {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+     .service-image {
+        height: 220px;
+    }
+
+     .service-title {
+        font-size: 20px;
+    }
+
+     .service-description {
+        font-size: 15px;
+    }
+}
+
+ @media (max-width: 575.98px) {
+
+     .ways-section {
+        padding: 30px 10px;
+    }
+
+     .ways-title {
+        font-size: 24px;
+    }
+
+     .service-image {
+        height: 200px;
+    }
+
+     .service-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+     .service-icon img {
+        width: 44px;
+        height: 44px;
+    }
+
+     .service-title {
+        font-size: 19px;
+    }
 }

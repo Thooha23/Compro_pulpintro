@@ -3,7 +3,7 @@
 @section('title', 'Lions Club Jakarta Pulpintro')
 
 @section('content')
-    <section class="py-5" style="background:#F6EADB;">
+    <section class="py-2" style="background:#F6EADB;">
         {{-- ================= Visi & Misi ================= --}}
             <div class="card info-card border-0 shadow-sm">
                 <div class="card-body p-4 p-md-2">
@@ -73,87 +73,327 @@
         <br>
 
         {{-- ================= Structure ================= --}}
-        <div class="container my-2">
-            <div class="card info-card border-0 shadow-sm rounded-4">
-                <div class="card-body p-4 p-md-5">
-                    <h2 class="fw-bold mb-3" style="text-align: center;">
-                        STUCTURE
-                    </h2>
-                    <br>
+        <section class="ways-section">
 
-                    <!-- This section is intended to display the organizational structure
-                     of the Lions Club Jakarta Pulpintro.Each member's name and position 
-                     will be displayed in a card format. The images for each member can 
-                     be added in the 'structure-image' div. The layout is responsive and 
-                     will adjust based on the screen size. -->
+            <div class="container">
 
-                    <div class="row g-4 justify-content-center">
+                <h2 class="ways-title">
+                    WAYS WE SERVE
+                </h2>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="card-fluid structure-card h-100 border-0 shadow-sm">
-                                <div class="structure-image">
-                                    <img>
+                <div class="row g-4">
+
+                    <!-- ================= CHILDHOOD CANCER ================= -->
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="service-card shadow-sm">
+
+                            <div class="service-image">
+
+                                <img src="{{ asset('assets/images/ways_we_serve/childhood_cancer.jpg') }}"
+                                    alt="Childhood Cancer">
+
+                                <div class="service-icon">
+
+                                    <img src="{{ asset('assets/images/icons/Childhood_Cancer.png') }}"
+                                        alt="Childhood Cancer Icon">
+
                                 </div>
-                                <div class="card-body text-center">
-                                    <h6 class="fw-bold mb-1">
-                                        Nama
-                                    </h6>
-                                    <small class="text-muted">
-                                        Jabatan
-                                    </small>
-                                </div>
+
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="card-fluid structure-card h-100 border-0 shadow-sm">
-                                <div class="structure-image">
-                                    <img>
-                                </div>
-                                <div class="card-body text-center">
-                                    <h6 class="fw-bold mb-1">
-                                        Nama
-                                    </h6>
-                                    <small class="text-muted">
-                                        Jabatan
-                                    </small>
-                                </div>
+
+                            <div class="service-body">
+
+                                <h3 class="service-title title-yellow">
+                                    Childhood Cancer
+                                </h3>
+
+                                <p class="service-description">
+                                    We provide support of the needs of children and families
+                                    affected by childhood cancer.
+                                </p>
+
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="card-fluid structure-card h-100 border-0 shadow-sm">
-                                <div class="structure-image">
-                                    <img>
-                                </div>
-                                <div class="card-body text-center">
-                                    <h6 class="fw-bold mb-1">
-                                        Nama
-                                    </h6>
-                                    <small class="text-muted">
-                                        Jabatan
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="card-fluid structure-card h-100 border-0 shadow-sm">
-                                <div class="structure-image">
-                                    <img>
-                                </div>
-                                <div class="card-body text-center">
-                                    <h6 class="fw-bold mb-1">
-                                        Nama
-                                    </h6>
-                                    <small class="text-muted">
-                                        Jabatan
-                                    </small>
-                                </div>
-                            </div>
+
                         </div>
 
                     </div>
+
+
+                    <!-- ================= DIABETES ================= -->
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="service-card shadow-sm">
+
+                            <div class="service-image">
+
+                                <img src="{{ asset('assets/images/ways_we_serve/diabetes.jpg') }}"
+                                    alt="Diabetes">
+
+                                <div class="service-icon">
+
+                                    <img src="{{ asset('assets/images/icons/Diabetes.png') }}"
+                                        alt="Diabetes Icon">
+
+                                </div>
+
+                            </div>
+
+                            <div class="service-body">
+
+                                <h3 class="service-title title-blue">
+                                    Diabetes
+                                </h3>
+
+                                <p class="service-description">
+                                    We work to reduce the prevalence of diabetes and improve
+                                    quality of life for those living with diabetes.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= DISASTER RELIEF ================= -->
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="service-card shadow-sm">
+
+                            <div class="service-image">
+
+                                <img src="{{ asset('assets/images/ways_we_serve/disaster-relief.jpg') }}"
+                                    alt="Disaster Relief">
+
+                                <div class="service-icon">
+
+                                    <img src="{{ asset('assets/images/icons/Disaster_Relief.png') }}"
+                                        alt="Disaster Relief Icon">
+
+                                </div>
+
+                            </div>
+
+                            <div class="service-body">
+
+                                <h3 class="service-title title-purple">
+                                    Disaster Relief
+                                </h3>
+
+                                <p class="service-description">
+                                    We take steps to meet immediate needs and provide
+                                    long-term support for communities devastated by
+                                    natural disasters.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= ENVIRONMENT ================= -->
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="service-card shadow-sm">
+
+                            <div class="service-image">
+
+                                <img src="{{ asset('assets/images/ways_we_serve/environment.jpg') }}"
+                                    alt="Environment">
+
+                                <div class="service-icon">
+
+                                    <img src="{{ asset('assets/images/icons/Environment.png') }}"
+                                        alt="Environment Icon">
+
+                                </div>
+
+                            </div>
+
+                            <div class="service-body">
+
+                                <h3 class="service-title title-green">
+                                    Environment
+                                </h3>
+
+                                <p class="service-description">
+                                    We find ways to protect the environment to create
+                                    healthier communities and a more sustainable world.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= HUMANITARIAN ================= -->
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="service-card shadow-sm">
+
+                            <div class="service-image">
+
+                                <img src="{{ asset('assets/images/humanitarian.jpg') }}"
+                                    alt="Humanitarian">
+
+                                <div class="service-icon">
+
+                                    <img src="{{ asset('assets/images/icons/Humanitarian_Efforts.png') }}"
+                                        alt="Humanitarian Icon">
+
+                                </div>
+
+                            </div>
+
+                            <div class="service-body">
+
+                                <h3 class="service-title title-red">
+                                    Humanitarian
+                                </h3>
+
+                                <p class="service-description">
+                                    We identify the world's most crucial needs and provide
+                                    humanitarian aid where it's needed most.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= HUNGER ================= -->
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="service-card shadow-sm">
+
+                            <div class="service-image">
+
+                                <img src="{{ asset('assets/images/ways_we_serve/hunger.jpg') }}"
+                                    alt="Hunger">
+
+                                <div class="service-icon">
+
+                                    <img src="{{ asset('assets/images/icons/Hunger.png') }}"
+                                        alt="Hunger Icon">
+
+                                </div>
+
+                            </div>
+
+                            <div class="service-body">
+
+                                <h3 class="service-title title-orange">
+                                    Hunger
+                                </h3>
+
+                                <p class="service-description">
+                                    We strive to improve food security and access to
+                                    nutritious food to help alleviate hunger.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= VISION ================= -->
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="service-card shadow-sm">
+
+                            <div class="service-image">
+
+                                <img src="{{ asset('assets/images/ways_we_serve/vision.jpg') }}"
+                                    alt="Vision">
+
+                                <div class="service-icon">
+
+                                    <img src="{{ asset('assets/images/icons/Vision.png') }}"
+                                        alt="Vision Icon">
+
+                                </div>
+
+                            </div>
+
+                            <div class="service-body">
+
+                                <h3 class="service-title title-dark-purple">
+                                    Vision
+                                </h3>
+
+                                <p class="service-description">
+                                    We help prevent avoidable blindness and improve
+                                    quality of life for people who are blind or visually
+                                    impaired.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= YOUTH ================= -->
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="service-card shadow-sm">
+
+                            <div class="service-image">
+
+                                <img src="{{ asset('assets/images/youth.jpg') }}"
+                                    alt="Youth">
+
+                                <div class="service-icon">
+
+                                    <img src="{{ asset('assets/images/icons/Youth.png') }}"
+                                        alt="Youth Icon">
+
+                                </div>
+
+                            </div>
+
+                            <div class="service-body">
+
+                                <h3 class="service-title title-teal">
+                                    Youth
+                                </h3>
+
+                                <p class="service-description">
+                                    We support young people so they can make positive
+                                    choices, lead healthy and productive lives, and become
+                                    the next generation of service leaders.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
-        </div>
+            
+        </section>
         
     </section>
 @endsection
