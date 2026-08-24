@@ -91,7 +91,7 @@
 
                             <div class="service-image">
 
-                                <img src="{{ asset('assets/images/ways_we_serve/childhood_cancer.jpg') }}"
+                                <img src="{{ asset('assets/images/ways_we_serve/childhood_cancer1.jpg') }}"
                                     alt="Childhood Cancer">
 
                                 <div class="service-icon">
@@ -320,7 +320,7 @@
 
                             <div class="service-image">
 
-                                <img src="{{ asset('assets/images/ways_we_serve/vision.jpg') }}"
+                                <img src="{{ asset('assets/images/ways_we_serve/vision1.jpg') }}"
                                     alt="Vision">
 
                                 <div class="service-icon">
