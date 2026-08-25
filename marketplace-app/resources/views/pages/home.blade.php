@@ -9,7 +9,7 @@
         <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{ asset('assets/images/banner.jpg') }}"
+                    <img src="{{ asset('assets/images/banner.JPG') }}"
                         class="d-block w-100 hero-image"
                         alt="Banner 1">
                 </div>
