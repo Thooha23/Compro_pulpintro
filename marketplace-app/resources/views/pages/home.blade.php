@@ -9,17 +9,17 @@
         <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{ asset('assets/images/banner/banner.jpg') }}"
+                    <img src="{{ asset('assets/images/banner.jpg') }}"
                         class="d-block w-100 hero-image"
                         alt="Banner 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('assets/images/banner/banner1.jpg') }}"
+                    <img src="{{ asset('assets/images/banner1.jpg') }}"
                         class="d-block w-100 hero-image"
                         alt="Banner 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('assets/images/banner/banner3.jpg') }}"
+                    <img src="{{ asset('assets/images/banner3.jpg') }}"
                         class="d-block w-100 hero-image"
                         alt="Banner 3">
                 </div>

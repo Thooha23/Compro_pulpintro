@@ -11,17 +11,17 @@
                         <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="{{ asset('assets/images/banner/banner.jpg') }}"
+                                    <img src="{{ asset('assets/images/banner.jpg') }}"
                                         class="d-block w-100 hero-image"
                                         alt="Banner 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('assets/images/banner/banner1.jpg') }}"
+                                    <img src="{{ asset('assets/images/banner1.jpg') }}"
                                         class="d-block w-100 hero-image"
                                         alt="Banner 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="{{ asset('assets/images/banner/banner3.jpg') }}"
+                                    <img src="{{ asset('assets/images/banner3.jpg') }}"
                                         class="d-block w-100 hero-image"
                                         alt="Banner 3">
                                 </div>
@@ -91,12 +91,12 @@
 
                             <div class="service-image">
 
-                                <img src="{{ asset('assets/images/ways_we_serve/childhood_cancer1.jpg') }}"
+                                <img src="{{ asset('assets/images/childhood_cancer1.jpg') }}"
                                     alt="Childhood Cancer">
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/icons/Childhood_Cancer.png') }}"
+                                    <img src="{{ asset('assets/images/Childhood_Cancer.png') }}"
                                         alt="Childhood Cancer Icon">
 
                                 </div>
@@ -129,12 +129,12 @@
 
                             <div class="service-image">
 
-                                <img src="{{ asset('assets/images/ways_we_serve/diabetes.jpg') }}"
+                                <img src="{{ asset('assets/images/diabetes.jpg') }}"
                                     alt="Diabetes">
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/icons/Diabetes.png') }}"
+                                    <img src="{{ asset('assets/images/Diabetes.png') }}"
                                         alt="Diabetes Icon">
 
                                 </div>
@@ -167,12 +167,12 @@
 
                             <div class="service-image">
 
-                                <img src="{{ asset('assets/images/ways_we_serve/disaster-relief.jpg') }}"
+                                <img src="{{ asset('assets/images/disaster-relief.jpg') }}"
                                     alt="Disaster Relief">
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/icons/Disaster_Relief.png') }}"
+                                    <img src="{{ asset('assets/images/Disaster_Relief.png') }}"
                                         alt="Disaster Relief Icon">
 
                                 </div>
@@ -206,12 +206,12 @@
 
                             <div class="service-image">
 
-                                <img src="{{ asset('assets/images/ways_we_serve/environment.jpg') }}"
+                                <img src="{{ asset('assets/images/environment.jpg') }}"
                                     alt="Environment">
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/icons/Environment.png') }}"
+                                    <img src="{{ asset('assets/images/Environment.png') }}"
                                         alt="Environment Icon">
 
                                 </div>
@@ -249,7 +249,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/icons/Humanitarian_Efforts.png') }}"
+                                    <img src="{{ asset('assets/images/Humanitarian_Efforts.png') }}"
                                         alt="Humanitarian Icon">
 
                                 </div>
@@ -282,12 +282,12 @@
 
                             <div class="service-image">
 
-                                <img src="{{ asset('assets/images/ways_we_serve/hunger.jpg') }}"
+                                <img src="{{ asset('assets/images/hunger.jpg') }}"
                                     alt="Hunger">
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/icons/Hunger.png') }}"
+                                    <img src="{{ asset('assets/images/Hunger.png') }}"
                                         alt="Hunger Icon">
 
                                 </div>
@@ -320,12 +320,12 @@
 
                             <div class="service-image">
 
-                                <img src="{{ asset('assets/images/ways_we_serve/vision1.jpg') }}"
+                                <img src="{{ asset('assets/images/vision1.jpg') }}"
                                     alt="Vision">
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/icons/Vision.png') }}"
+                                    <img src="{{ asset('assets/images/Vision.png') }}"
                                         alt="Vision Icon">
 
                                 </div>
@@ -364,7 +364,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/icons/Youth.png') }}"
+                                    <img src="{{ asset('assets/images/Youth.png') }}"
                                         alt="Youth Icon">
 
                                 </div>
