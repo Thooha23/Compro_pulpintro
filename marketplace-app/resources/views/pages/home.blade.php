@@ -18,11 +18,6 @@
                         class="d-block w-100 hero-image"
                         alt="Banner 2">
                 </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('assets/images/banner3.jpg') }}"
-                        class="d-block w-100 hero-image"
-                        alt="Banner 3">
-                </div>
             </div>
         </div>
         <div class="hero-overlay">
