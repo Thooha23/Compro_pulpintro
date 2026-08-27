@@ -25,6 +25,14 @@
     }
 }
 
+/* ==================================================
+    GLOBAL
+================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --serve-bg: #F6EADB;
     --yellow: #f2bd00;
@@ -45,6 +53,12 @@ header{
 
 body {
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background-color: #fff;
+    overflow-x: hidden;
 }
 
 h1,
@@ -211,129 +225,6 @@ header .btn{
     height: 170px;
     object-fit: contain;
 }
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-.footer-section {
-    background-color: #173a5e;
-    color: #ffffff;
-}
-
-
-/* Logo */
-
-.footer-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-
-/* Address */
-
-.footer-address {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-
-/* Footer title */
-
-.footer-title {
-    font-size: 17px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-
-/* Navigation */
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer-links a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #ffffff;
-    padding-left: 5px;
-}
-
-
-/* Contact */
-
-.footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    color: rgba(255, 255, 255, 0.7);
-
-    font-size: 14px;
-}
-
-.contact-item i {
-    width: 20px;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-
-/* Bottom */
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 18px 0;
-}
-
-.footer-bottom p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 12px;
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 767.98px) {
-
-    .footer-section .row {
-        text-align: center;
-    }
-
-    .footer-logo {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footer-links {
-        align-items: center;
-    }
-
-    .contact-item {
-        justify-content: center;
-    }
-
-}
-
 
 /* =========================================
     STRUCTURE CARD
@@ -586,4 +477,403 @@ header .btn{
      .service-title {
         font-size: 19px;
     }
+}
+
+
+/* ==================================================
+    NAVBAR
+================================================== */
+
+.main-navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-wrapper {
+    min-height: 82px;
+}
+
+
+/* ================= LOGO ================= */
+
+.navbar-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.navbar-logo-jakarta {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.brand-title {
+    line-height: 1.1;
+    margin: 0;
+}
+
+.brand-title .title-main {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.brand-title .title-sub {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.navbar-nav {
+    gap: 5px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #222 !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 14px !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #118B50 !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 3px;
+    height: 2px;
+    background: #118B50;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* ================= NAVBAR BUTTON ================= */
+
+.navbar-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-join,
+.btn-fundraising {
+    border: none;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 9px 22px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-join {
+    background-color: #F5298E;
+}
+
+.btn-fundraising {
+    background-color: #F68B1F;
+}
+
+.btn-join:hover,
+.btn-fundraising:hover {
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-join:hover {
+    background-color: #df1677;
+}
+
+.btn-fundraising:hover {
+    background-color: #dd7410;
+}
+
+
+/* ================= HAMBURGER ================= */
+
+.navbar-toggler {
+    border: none;
+    padding: 6px 8px;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    width: 28px;
+    height: 28px;
+}
+
+
+/* ==================================================
+    MAIN CONTENT
+================================================== */
+
+main {
+    min-height: 60vh;
+}
+
+
+/* ==================================================
+    FOOTER
+================================================== */
+
+.footer-section {
+    margin-top: 50px;
+    background-color: #173a5e;
+    color: #fff;
+}
+
+.footer-logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    background: #fff;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.footer-address {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-item i {
+    font-size: 17px;
+    min-width: 20px;
+}
+
+
+/* ==================================================
+    FOOTER BOTTOM
+================================================== */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 18px 0;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* ==================================================
+    TABLET
+================================================== */
+
+@media (max-width: 1199.98px) {
+
+    .navbar-nav .nav-link {
+        font-size: 13px;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .btn-join,
+    .btn-fundraising {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .brand-title .title-main {
+        font-size: 18px;
+    }
+
+    .brand-title .title-sub {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ==================================================
+    MOBILE
+================================================== */
+
+@media (max-width: 991.98px) {
+
+    .navbar-wrapper {
+        min-height: 70px;
+    }
+
+    .navbar-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .navbar-logo-jakarta {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-title .title-main {
+        font-size: 17px;
+    }
+
+    .brand-title .title-sub {
+        font-size: 15px;
+    }
+
+
+    /* Menu mobile */
+
+    .navbar-collapse {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-nav {
+        gap: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 5px !important;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+
+
+    /* Button mobile */
+
+    .navbar-action {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        margin-top: 15px;
+        gap: 8px;
+    }
+
+    .btn-join,
+    .btn-fundraising {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* ==================================================
+    SMALL MOBILE
+================================================== */
+
+@media (max-width: 575.98px) {
+
+    .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .navbar-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .navbar-logo-jakarta {
+        width: 34px;
+        height: 34px;
+        margin-right: 8px !important;
+    }
+
+    .brand-title .title-main {
+        font-size: 14px;
+    }
+
+    .brand-title .title-sub {
+        font-size: 12px;
+    }
+
+    .navbar-toggler-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Footer */
+    .footer-section {
+        margin-top: 30px;
+    }
+
+    .footer-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .footer-title {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-address,
+    .footer-links a,
+    .contact-item {
+        font-size: 13px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
 }
