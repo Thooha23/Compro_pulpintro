@@ -28,9 +28,9 @@
                 <img src="{{ asset('assets/images/logo-panjang-pulpintro.png') }}"
                     alt="Logo"
                     class="hero-logo">
-                <h2 class="hero-subtitle">
+                <!-- <h2 class="hero-subtitle">
                     CREATIVE SOLIDARITY
-                </h2>
+                </h2> -->
             </div>
         </div>
     </section>

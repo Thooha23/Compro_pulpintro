@@ -58,14 +58,14 @@
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="card-fluid structure-card h-100 border-0 shadow-sm">
                                 <div class="structure-image">
-                                    <img>
+                                    <img src="{{ asset('assets/images/Reykhando_Rifki_Awiliyanto.jpg') }}">
                                 </div>
                                 <div class="card-body text-center">
                                     <h6 class="fw-bold mb-1">
-                                        Nama
+                                        Reykhando Rifki Awiliyanto
                                     </h6>
                                     <small class="text-muted">
-                                        Jabatan
+                                        President
                                     </small>
                                 </div>
                             </div>
@@ -73,14 +73,14 @@
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="card-fluid structure-card h-100 border-0 shadow-sm">
                                 <div class="structure-image">
-                                    <img>
+                                    <img src="{{ asset('assets/images/Muhamad_Akmal.jpg') }}">
                                 </div>
                                 <div class="card-body text-center">
                                     <h6 class="fw-bold mb-1">
-                                        Nama
+                                        Muhamad Akmal
                                     </h6>
                                     <small class="text-muted">
-                                        Jabatan
+                                        Vice President
                                     </small>
                                 </div>
                             </div>
