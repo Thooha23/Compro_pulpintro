@@ -106,7 +106,7 @@
                 <div class="navbar-action">
 
                     <a
-                        href="#"
+                        href="{{ route('join') }}"
                         class="btn btn-join"
                     >
                         Join
@@ -332,10 +332,10 @@
 
                             <i class="bi bi-tiktok"></i>
 
-                            <span>
-                                lionsclub.pulpintro
+                            <span href="#" target="_blank">
+                                lionsclub.pulpintro   
                             </span>
-
+    
                         </div>
 
 
@@ -343,9 +343,9 @@
 
                             <i class="bi bi-instagram"></i>
 
-                            <span>
-                                lionsclub_jakarta_pulpintro
-                            </span>
+                            <a href="https://www.instagram.com/lionsclubjakarta_pulpintro?igsi=MWVxNDVuY2F6bWFkOQ==" target="_blank">
+                                <span>lionsclubjakarta_pulpintro</span>
+                            </a>
 
                         </div>
 

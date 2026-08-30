@@ -47,4 +47,9 @@ class PageController extends Controller
     {
         return view('pages.partnership');
     }
+
+    public function join()
+    {
+        return view('pages.join');
+    }
 }
