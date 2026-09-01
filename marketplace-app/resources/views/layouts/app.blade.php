@@ -343,7 +343,8 @@
 
                             <i class="bi bi-instagram"></i>
 
-                            <a href="https://www.instagram.com/lionsclubjakarta_pulpintro?igsi=MWVxNDVuY2F6bWFkOQ==" target="_blank">
+                            <a href="https://www.instagram.com/lionsclubjakarta_pulpintro?igsi=MWVxNDVuY2F6bWFkOQ==" target="_blank" 
+                                class="text-white text-decoration-none instagram-link">
                                 <span>lionsclubjakarta_pulpintro</span>
                             </a>
 
