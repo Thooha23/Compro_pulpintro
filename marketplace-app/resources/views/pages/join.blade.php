@@ -18,14 +18,6 @@
                 {{-- ================= LEFT CONTENT ================= --}}
                 <div class="text-center lg:text-left">
 
-                    <span class="inline-flex items-center gap-2 px-4 py-2 mb-5
-                                 rounded-full bg-yellow-100 text-yellow-700
-                                 text-sm font-semibold">
-
-                        <i class="bi bi-people-fill"></i>
-                        Be Part of Something Meaningful
-                    </span>
-
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold
                                text-gray-900 leading-tight mb-6">
 
@@ -48,38 +40,6 @@
                         perubahan positif bagi masyarakat.
 
                     </p>
-
-                    {{-- CTA --}}
-                    <div class="flex flex-col sm:flex-row gap-4
-                                justify-center lg:justify-start">
-
-                        <a href="#join-form"
-                           class="inline-flex items-center justify-center gap-2
-                                  px-7 py-3.5 rounded-xl
-                                  bg-yellow-500 hover:bg-yellow-600
-                                  text-white font-semibold
-                                  shadow-lg shadow-yellow-500/20
-                                  transition duration-300">
-
-                            <i class="bi bi-person-plus-fill"></i>
-                            Join Us
-
-                        </a>
-
-                        <a href="#why-join"
-                           class="inline-flex items-center justify-center gap-2
-                                  px-7 py-3.5 rounded-xl
-                                  border border-gray-300
-                                  text-gray-700 hover:bg-gray-50
-                                  font-semibold
-                                  transition duration-300">
-
-                            <i class="bi bi-arrow-down-circle"></i>
-                            Learn More
-
-                        </a>
-
-                    </div>
 
                 </div>
 
@@ -276,82 +236,24 @@
     </section>
 
 
-    {{-- ================= CTA ================= --}}
-    <section id="join-form" class="py-20 bg-gray-50">
+    <section class="join-cta-section bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6 sm:px-8 text-center">
+            <div class="join-cta-row d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 gap-sm-4">
+                <a href="https://forms.google.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="join-cta-btn join-cta-primary text-decoration-none">
+                    <i class="bi bi-person-plus-fill"></i>
+                    Join Us
+                </a>
 
-        <div class="max-w-4xl mx-auto px-6 sm:px-8">
-
-            <div class="relative overflow-hidden
-                        bg-gray-900 rounded-3xl
-                        px-8 py-12 md:px-12 md:py-16
-                        text-center">
-
-                {{-- Decorative --}}
-                <div class="absolute -top-20 -right-20
-                            w-48 h-48
-                            bg-yellow-400/20
-                            rounded-full blur-3xl">
-                </div>
-
-                <div class="absolute -bottom-20 -left-20
-                            w-48 h-48
-                            bg-blue-500/20
-                            rounded-full blur-3xl">
-                </div>
-
-
-                <div class="relative">
-
-                    <div class="w-16 h-16 mx-auto mb-6
-                                rounded-2xl
-                                bg-yellow-400
-                                flex items-center justify-center">
-
-                        <i class="bi bi-people-fill text-gray-900 text-2xl"></i>
-
-                    </div>
-
-
-                    <h2 class="text-3xl md:text-4xl
-                               font-bold text-white mb-4">
-
-                        Ready to Make a Difference?
-
-                    </h2>
-
-
-                    <p class="text-gray-400 max-w-xl mx-auto mb-8">
-
-                        Jangan hanya menjadi penonton.
-                        Bergabunglah bersama Lions Club Jakarta Pulpintro
-                        dan mari bersama-sama memberikan manfaat bagi sesama.
-
-                    </p>
-
-
-                    <a href="https://forms.google.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2
-                              px-8 py-3.5
-                              rounded-xl
-                              bg-yellow-400
-                              hover:bg-yellow-300
-                              text-gray-900
-                              font-bold
-                              transition duration-300">
-
-                        <i class="bi bi-person-plus-fill"></i>
-                        Join Lions Club
-
-                    </a>
-
-                </div>
-
+                <a href="#why-join"
+                   class="join-cta-btn join-cta-secondary text-decoration-none">
+                    <i class="bi bi-arrow-down-circle"></i>
+                    Learn More
+                </a>
             </div>
-
         </div>
-
     </section>
 
 @endsection

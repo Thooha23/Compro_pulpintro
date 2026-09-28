@@ -98,6 +98,15 @@
                         </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a
+                            href="{{ route('faq') }}"
+                            class="nav-link"
+                        >
+                            FAQ
+                        </a>
+                    </li>
+
                 </ul>
 
 
@@ -112,10 +121,7 @@
                         Join
                     </a>
 
-                    <a
-                        href="#"
-                        class="btn btn-fundraising"
-                    >
+                    <a href="{{ route('fundraising') }}" class="btn btn-fundraising">
                         Fundraising
                     </a>
 
@@ -300,6 +306,10 @@
 
                         <a href="{{ route('partnership') }}">
                             Our Partnership
+                        </a>
+
+                        <a href="{{ route('faq') }}">
+                            FAQ
                         </a>
 
                     </div>

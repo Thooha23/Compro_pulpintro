@@ -4,40 +4,6 @@
 
 @section('content')
     <section class="py-2" style="background:#F6EADB;">
-        {{-- ================= Visi & Misi ================= --}}
-            <div class="card info-card border-0 shadow-sm">
-                <div class="card-body p-4 p-md-2">
-                    <div class="row align-items-center g-4">
-                        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('assets/images/banner.JPG') }}"
-                                        class="d-block w-100 hero-image"
-                                        alt="Banner 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('assets/images/banner1.jpg') }}"
-                                        class="d-block w-100 hero-image"
-                                        alt="Banner 2">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hero-overlay">
-                            <div class="hero-content">
-                                <h1 class="hero-title">
-                                    LIONS CLUB JAKARTA
-                                </h1>
-                                <img src="{{ asset('assets/images/logo-panjang-pulpintro.png') }}"
-                                    alt="Logo"
-                                    class="hero-logo">
-                                <h2 class="hero-subtitle">
-                                    CREATIVE SOLIDARITY
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         <!-- <div class="container my-2">
             <div class="card info-card border-0 shadow-sm rounded-4">
                 <div class="card-body p-4 p-md-5">

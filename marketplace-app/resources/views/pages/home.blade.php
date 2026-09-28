@@ -61,7 +61,7 @@
                                     childhood cancer, environment protection, and
                                     humanitarian aid.
                                 </p>
-                                <a href="#"
+                                <a href="https://www.lionsclubs.org/en" target="_blank" rel="noopener noreferrer"
                                 class="fw-bold text-decoration-none learn-more">
                                     Learn More →
                                 </a>
@@ -98,7 +98,7 @@
                                     childhood cancer, environment protection, and
                                     humanitarian aid.
                                 </p>
-                                <a href="#"
+                                <a href="{{ route('service') }}"
                                 class="fw-bold text-decoration-none learn-more">
                                     Ways We Serve →
                                 </a>
@@ -125,11 +125,21 @@
                 <div id="momentsTrack"
                     class="d-flex overflow-auto gap-4 px-5">
                     @foreach($keyMoments as $moment)
+                        @php
+                            $momentImage = $moment['image'] ?? null;
+                            if (is_array($momentImage)) {
+                                $momentImage = $momentImage[0] ?? null;
+                            }
+                        @endphp
                         <div class="card flex-shrink-0"
                             style="width:260px;">
-                            <div class="bg-secondary-subtle d-flex justify-content-center align-items-center"
+                            <div class="bg-secondary-subtle d-flex justify-content-center align-items-center overflow-hidden"
                                 style="height:180px;">
-                                ▶
+                                @if($momentImage)
+                                    <img src="{{ asset($momentImage) }}" alt="{{ $moment['title'] }}" class="w-100 h-100" style="object-fit:cover; display:block;">
+                                @else
+                                    <span class="text-muted">▶</span>
+                                @endif
                             </div>
                             <div class="card-body">
                                 <h6 class="fw-bold">
