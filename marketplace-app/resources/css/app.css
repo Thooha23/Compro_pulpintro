@@ -89,7 +89,7 @@ header a:hover {
 }
 
 .join-cta-section {
-    padding-top: 0.05rem;
+    padding-top: 0;
     padding-bottom: 2.2rem;
 }
 
@@ -98,6 +98,7 @@ header a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 0.85rem;
     margin-top: 0;
 }
 
@@ -106,7 +107,8 @@ header a:hover {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.9rem 1.8rem;
+    min-width: 170px;
+    padding: 0.85rem 1.5rem;
     border-radius: 999px;
     font-weight: 700;
     transition: all 0.3s ease;
@@ -144,6 +146,17 @@ header a:hover {
 .join-cta-secondary:active {
     background: #f8f9fb;
     color: #1f2937;
+}
+
+@media (max-width: 575px) {
+    .join-cta-row {
+        gap: 0.75rem;
+    }
+
+    .join-cta-btn {
+        width: 100%;
+        max-width: 230px;
+    }
 }
 
 header .btn {

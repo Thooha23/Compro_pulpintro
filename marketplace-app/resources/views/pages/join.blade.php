@@ -99,6 +99,22 @@
 
         <div class="max-w-6xl mx-auto px-6 sm:px-8">
 
+            <div class="join-cta-row d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 gap-sm-4 mb-5">
+                <a href="https://forms.google.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="join-cta-btn join-cta-primary text-decoration-none">
+                    <i class="bi bi-person-plus-fill"></i>
+                    Join Us
+                </a>
+
+                <a href="#why-join"
+                   class="join-cta-btn join-cta-secondary text-decoration-none">
+                    <i class="bi bi-arrow-down-circle"></i>
+                    Learn More
+                </a>
+            </div>
+
             {{-- Section Header --}}
             <div class="text-center max-w-2xl mx-auto mb-12">
 
@@ -235,25 +251,5 @@
 
     </section>
 
-
-    <section class="join-cta-section bg-gray-50">
-        <div class="max-w-5xl mx-auto px-6 sm:px-8 text-center">
-            <div class="join-cta-row d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 gap-sm-4">
-                <a href="https://forms.google.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="join-cta-btn join-cta-primary text-decoration-none">
-                    <i class="bi bi-person-plus-fill"></i>
-                    Join Us
-                </a>
-
-                <a href="#why-join"
-                   class="join-cta-btn join-cta-secondary text-decoration-none">
-                    <i class="bi bi-arrow-down-circle"></i>
-                    Learn More
-                </a>
-            </div>
-        </div>
-    </section>
 
 @endsection
