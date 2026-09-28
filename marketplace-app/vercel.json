@@ -2,7 +2,7 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": {
+        "marketplace-app/api/index.php": {
             "runtime": "vercel-php@0.7.1"
         }
     },
