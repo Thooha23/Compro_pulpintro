@@ -57,7 +57,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/Childhood_Cancer.png') }}"
+                                    <img src="{{ asset('assets/images/childhood_cancer_logo.png') }}"
                                         alt="Childhood Cancer Icon">
 
                                 </div>
@@ -95,7 +95,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/Diabetes.png') }}"
+                                    <img src="{{ asset('assets/images/diabetes_logo.png') }}"
                                         alt="Diabetes Icon">
 
                                 </div>
@@ -133,7 +133,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/Disaster_Relief.png') }}"
+                                    <img src="{{ asset('assets/images/disaster_relief_logo.png') }}"
                                         alt="Disaster Relief Icon">
 
                                 </div>
@@ -172,7 +172,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/Environment.png') }}"
+                                    <img src="{{ asset('assets/images/environment_logo.png') }}"
                                         alt="Environment Icon">
 
                                 </div>
@@ -210,7 +210,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/Humanitarian_Efforts.png') }}"
+                                    <img src="{{ asset('assets/images/humanitarian_efforts_logo.png') }}"
                                         alt="Humanitarian Icon">
 
                                 </div>
@@ -248,7 +248,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/Hunger.png') }}"
+                                    <img src="{{ asset('assets/images/hunger_logo.png') }}"
                                         alt="Hunger Icon">
 
                                 </div>
@@ -286,7 +286,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/Vision.png') }}"
+                                    <img src="{{ asset('assets/images/vision_logo.png') }}"
                                         alt="Vision Icon">
 
                                 </div>
@@ -325,7 +325,7 @@
 
                                 <div class="service-icon">
 
-                                    <img src="{{ asset('assets/images/Youth.png') }}"
+                                    <img src="{{ asset('assets/images/youth_logo.png') }}"
                                         alt="Youth Icon">
 
                                 </div>
