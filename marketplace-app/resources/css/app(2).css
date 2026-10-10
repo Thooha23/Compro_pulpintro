@@ -1251,97 +1251,6 @@ header .btn {
 ======================================== */
 
 .main-navbar {
-    background-color: #ffffff;
-    width: 100%;
-}
-
-.navbar-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-/* BRAND */
-.navbar-brand {
-    flex-shrink: 0;
-}
-
-.navbar-logo {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-}
-
-.navbar-logo-jakarta {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-}
-
-.brand-title {
-    white-space: nowrap;
-}
-
-.title-main {
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.title-sub {
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-/* MENU */
-.navbar-collapse {
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-
-.navbar-nav .nav-link {
-    white-space: nowrap;
-    font-weight: 600;
-    color: #222;
-    padding: 8px 0;
-}
-
-/* BUTTON */
-.navbar-action {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
-.btn-join,
-.btn-fundraising {
-    white-space: nowrap;
-    border-radius: 50px;
-    padding: 8px 20px;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.btn-join {
-    background-color: #f5298e;
-}
-
-.btn-fundraising {
-    background-color: #f68b1f;
-}
-
-/* .main-navbar {
     width: 100%;
     max-width: 100%;
     background: #ffffff;
@@ -1416,7 +1325,7 @@ header .btn {
 .navbar-collapse {
     flex: 1 1 auto;
 
-    display: flex;
+    /* display: flex; */
     align-items: center;
 }
 
@@ -1489,6 +1398,63 @@ header .btn {
     color: #ffffff;
 }
 
+/* ==================================================
+   HAMBURGER
+================================================== */
+
+.navbar-toggler {
+    display: none;
+
+    border: 1px solid rgba(23, 58, 94, 0.25);
+
+    padding: 7px 9px;
+
+    border-radius: 8px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ==================================================
+   NAVBAR COLLAPSE FIX
+================================================== */
+
+@media (min-width: 992px) {
+
+    .navbar-collapse {
+        display: flex !important;
+        align-items: center;
+        flex: 1 1 auto;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+
+    .navbar-collapse {
+        width: 100%;
+        flex-basis: 100%;
+        flex-grow: 1;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    /* Saat tertutup */
+    .navbar-collapse.collapse:not(.show) {
+        display: none !important;
+    }
+
+    /* Saat terbuka */
+    .navbar-collapse.collapse.show {
+        display: flex !important;
+    }
+
+}
 
 /* ========================================
    TABLET
@@ -1580,19 +1546,15 @@ header .btn {
 
     .navbar-wrapper {
         min-height: 60px;
-
         padding-left: 15px;
         padding-right: 15px;
-
         flex-wrap: wrap;
     }
-
 
     /* BRAND */
 
     .main-navbar .navbar-brand {
         margin-right: 0;
-
         max-width: calc(100% - 55px);
     }
 
@@ -1604,13 +1566,11 @@ header .btn {
     .navbar-logo-jakarta {
         width: 38px;
         height: 38px;
-
         margin-left: 5px;
     }
 
     .brand-title {
         margin-left: 6px;
-
         overflow: hidden;
     }
 
@@ -1627,25 +1587,40 @@ header .btn {
 
     .navbar-toggler {
         display: block;
-
         margin-left: auto;
-
         flex-shrink: 0;
+
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+
+        padding: 7px 9px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
     }
 
 
-    /* COLLAPSED MENU */
+    /* COLLAPSE */
 
     .navbar-collapse {
         width: 100%;
         flex-basis: 100%;
+        flex-grow: 1;
 
         flex-direction: column;
-
         align-items: stretch;
 
         padding-top: 15px;
         padding-bottom: 10px;
+    }
+
+    .navbar-collapse.collapse:not(.show) {
+        display: none !important;
+    }
+
+    .navbar-collapse.collapse.show {
+        display: flex !important;
     }
 
 
@@ -1655,7 +1630,6 @@ header .btn {
         width: 100%;
 
         flex-direction: column;
-
         align-items: stretch;
 
         gap: 0;
